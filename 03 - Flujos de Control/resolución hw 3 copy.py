@@ -47,90 +47,41 @@ print()
 #5) Crear una variable que contenga un número entero y realizar un ciclo for la misma cantidad de ciclos
 print("#"+ str(a + 4) + ")")
 
-from random import randint
 num3 = randint(4, 8)
 i = 0
 for i in range(num3):
     i += 1
-    print("El número es", str(num3), "y el ciclo se repite por", str(i) ,"vez.") 
+    print("el numero es " + str(num3) + " y el ciclo se repite por " + str(i) + " vez.") 
 
 print()
 #6) Utilizar un ciclo while para realizar el factorial de un número guardado en una variable, sólo si la variable contiene un número entero mayor a 0
 print("#"+ str(a + 5) + ")")
 
-from random import randint
-fact = randint(1, 20)
+fact1 = randrange(1, 1000)
+fact = 3
 cont = 0
 multiplica = 1
-while cont != fact:
-    cont += 1
-    multiplica *= cont
-print("El factorial de ", fact , " es " , multiplica)
+while cont != fact
+cont += 1
+multiplica *= cont
+print("Para obtener el factorial de " + str(fact) + "multiplicamos " * str(multiplica) + " y " + str(cont))
 
 
 print()
 #7) Crear un ciclo for dentro de un ciclo while
 print("#"+ str(a + 6) + ")")
 
-n = 0 
-var = "123"
-while n < 4:
-    for i in var:
-        print(i)
-    n += 1
-    if n == 4 or n > 4: 
-        break
-print('Fin')
-
 print()
 #8) Crear un ciclo while dentro de un ciclo for
 print("#"+ str(a + 7) + ")")
-
-n = 0
-for i in range(1,5):
-    while(n < 2):
-        print("||||    ||||")
-        n += 1
-    n = 0
-    print( i, "° parada for")
 
 print()
 #9) Imprimir los números primos existentes entre 0 y 30
 print("#"+ str(a + 8) + ")")
 
-print("Lista de números primos del 0 al 30:")
-tope_rango = 30
-n = 0
-primo = True
-while (n < tope_rango):
-    for div in range (2, n):
-        if (n % div == 0):
-            primo = False
-    if (primo):
-        print(n)
-    else:
-        primo = True
-    n += 1
-
-
 print()
 #10) ¿Se puede mejorar el proceso del punto 9? Utilizar las sentencias break y/ó continue para tal fin
 print("#"+ str(a + 9) + ")")
-
-print("Lista de números primos del 0 al 30:")
-tope_rango = 30
-n = 0
-primo = True
-while (n < tope_rango):
-    for div in range (2, n):
-        if (n % div == 0):
-            primo = False
-            break
-    if (primo):
-        print(n)
-    else:
-        primo = True
-    n += 1
 
 print()
 #11) En los puntos 9 y 10, se diseño un código que encuentra números primos y además se lo optimizó. ¿Es posible saber en qué medida se optimizó?

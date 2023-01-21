@@ -1,0 +1,8 @@
+from random import randint
+fact = randint(1, 20)
+cont = 0
+multiplica = 1
+while cont != fact:
+    cont += 1
+    multiplica *= cont
+print("El factorial de ", fact , " es " , multiplica)
